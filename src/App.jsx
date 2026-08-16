@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import yahdillahImg from './assets/yahdillah.png'
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const skills = {
     frontend: ['React.js', 'Vite', 'JavaScript (ES6+)', 'HTML5 & CSS3', 'Bootstrap', 'Tailwind CSS'],
@@ -64,12 +66,28 @@ function App() {
           <a href="#home" className="navbar-logo">
             Yahdillah<span>.dev</span>
           </a>
-          <ul className="navbar-menu">
-            <li><a href="#home" className="navbar-link">Beranda</a></li>
-            <li><a href="#about" className="navbar-link">Tentang</a></li>
-            <li><a href="#skills" className="navbar-link">Keahlian</a></li>
-            <li><a href="#projects" className="navbar-link">Proyek</a></li>
-            <li><a href="#contact" className="navbar-link">Kontak</a></li>
+          <button className="mobile-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              {isMenuOpen ? (
+                <>
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </>
+              ) : (
+                <>
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </>
+              )}
+            </svg>
+          </button>
+          <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
+            <li><a href="#home" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Beranda</a></li>
+            <li><a href="#about" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Tentang</a></li>
+            <li><a href="#skills" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Keahlian</a></li>
+            <li><a href="#projects" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Proyek</a></li>
+            <li><a href="#contact" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Kontak</a></li>
           </ul>
         </div>
       </nav>

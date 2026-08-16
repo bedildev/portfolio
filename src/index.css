@@ -509,7 +509,7 @@ section {
 /* Projects Section */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
 }
 
@@ -762,20 +762,92 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .navbar-menu {
-    display: none; /* simple hidden for mobile, in real app could make drawer */
+  .navbar-container {
+    position: relative;
   }
 
   .mobile-toggle {
     display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: var(--text-primary);
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: -24px;
+    width: calc(100% + 48px);
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    gap: 0;
+    box-shadow: var(--shadow-md);
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-menu li a {
+    display: block;
+    padding: 14px 24px;
+    width: 100%;
+  }
+
+  .navbar-menu li a::after {
+    display: none; /* remove hover line on mobile menu for simplicity */
   }
 
   .hero-title {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 280px;
   }
 
   section {
     padding: 60px 0;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img-wrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-blob {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-avatar {
+    width: 230px;
+    height: 230px;
+  }
+
+  .hero-code-box {
+    max-width: 260px;
   }
 }
 
