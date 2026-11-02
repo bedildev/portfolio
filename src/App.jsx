@@ -342,7 +342,7 @@ function App() {
                   <div>
                     <div className="contact-detail-label">LinkedIn</div>
                     <div className="contact-detail-value">
-                      <a href="https://linkedin.com/in/yahdillah" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>LinkedIn Yahdillah</a>
+                      <a href="https://www.linkedin.com/in/yahdillah-617357282" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>LinkedIn Yahdillah</a>
                     </div>
                   </div>
                 </div>
