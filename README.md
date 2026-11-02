@@ -1,16 +1,43 @@
-# React + Vite
+# Portofolio Yahdillah
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Website portofolio pribadi Yahdillah, dibangun dengan React + Vite.
 
-Currently, two official plugins are available:
+Saya mahasiswa S1 Teknik Informatika semester 7, Universitas YARSI. Saya Full-Stack Web Developer & AI Enthusiast, dengan fokus utama di backend, API, dan database, serta pengalaman membangun aplikasi web end-to-end dan fitur berbasis AI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Proyek yang Ditampilkan
 
-## React Compiler
+- **Tes DISC / MindMetrics** — Project Lead & Backend Developer. Platform tes kepribadian DISC dengan core engine kalkulasi otomatis, dashboard admin, dan laporan PDF. Laravel, React, REST API, MySQL.
+  - https://github.com/ascicode2025-boop/MindMetrics
+- **SILAB-NTDK** — Technical Lead & Backend Developer. Sistem informasi laboratorium untuk IPB University: sample tracking, penjadwalan, dan laporan PDF otomatis. Laravel, MySQL, Bootstrap, jQuery.
+  - https://github.com/ascicode2025-boop/SILAB-NTDK-IPB
+- **DISC Self Assessment — BeaCukai** — Backend Developer. REST API untuk asesmen kepribadian DISC mandiri, dengan basis data PostgreSQL.
+  - https://github.com/ascicode2025-boop/BeaCukai
+- **Nutrition Optimization / NutriMeal AI** — AI Engineer, Capstone Coding Camp 2026. Sistem optimasi menu makanan berbasis AI. Express.js, React, FastAPI, TensorFlow.
+  - https://github.com/bedildev/Nutrition-optimization
+- **Web Perpustakaan** — Full Stack Developer. Website sirkulasi perpustakaan mandiri, dibangun untuk sertifikasi KKNI Level II Rekayasa Perangkat Lunak. PHP, MySQL, HTML, CSS, JavaScript.
+  - https://github.com/bedildev/perpustakaan
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Keahlian
 
-## Expanding the Oxlint configuration
+Laravel, React.js, REST API, PHP, MySQL, PostgreSQL, HTML & CSS, JavaScript, Bootstrap, Git & GitHub, Postman, VS Code, dan dasar Machine Learning.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Menjalankan Proyek Ini
+
+```bash
+npm install
+npm run dev
+```
+
+Untuk build produksi:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Kontak
+
+- GitHub: https://github.com/bedildev
+- LinkedIn: https://www.linkedin.com/in/yahdillah-617357282
+- Email: adiyahdillah434@gmail.com
+- Instagram: https://instagram.com/yahdiillah
