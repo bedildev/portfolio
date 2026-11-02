@@ -40,4 +40,3 @@ npm run preview
 - GitHub: https://github.com/bedildev
 - LinkedIn: https://www.linkedin.com/in/yahdillah-617357282
 - Email: adiyahdillah434@gmail.com
-- Instagram: https://instagram.com/yahdiillah
